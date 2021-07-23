@@ -1,0 +1,12 @@
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Logging\bin\Debug\net5.0\Reconcilation.Management.Logging.deps.json
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Logging\bin\Debug\net5.0\Reconcilation.Management.Logging.dll
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Logging\bin\Debug\net5.0\ref\Reconcilation.Management.Logging.dll
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Logging\bin\Debug\net5.0\Reconcilation.Management.Logging.pdb
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Logging\obj\Debug\net5.0\Reconcilation.Management.Logging.csproj.AssemblyReference.cache
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Logging\obj\Debug\net5.0\Reconcilation.Management.Logging.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Logging\obj\Debug\net5.0\Reconcilation.Management.Logging.AssemblyInfoInputs.cache
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Logging\obj\Debug\net5.0\Reconcilation.Management.Logging.AssemblyInfo.cs
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Logging\obj\Debug\net5.0\Reconcilation.Management.Logging.csproj.CoreCompileInputs.cache
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Logging\obj\Debug\net5.0\Reconcilation.Management.Logging.dll
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Logging\obj\Debug\net5.0\ref\Reconcilation.Management.Logging.dll
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Logging\obj\Debug\net5.0\Reconcilation.Management.Logging.pdb
