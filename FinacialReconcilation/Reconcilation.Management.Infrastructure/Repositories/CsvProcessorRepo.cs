@@ -1,5 +1,6 @@
 ﻿using CsvHelper;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using Reconcilation.Management.Application.Contracts.Infrastructure;
 using Reconcilation.Management.Application.Features.FileParser.Query.CompareFile;
 using Reconcilation.Management.Application.Features.FileParser.Query.GetUnmatchFileResult;
@@ -104,9 +105,13 @@ namespace Reconcilation.Management.Infrastructure.Repositories
 
                 var firstFile = FileHelper.GetFileContent(files.FirstFile);
 
+                var tt = JsonConvert.SerializeObject(firstFile);
+
                 _logger.LogInformation("About to get the content of the second file");
 
                 var secondFile = FileHelper.GetFileContent(files.SecondFile);
+
+                var dd = JsonConvert.SerializeObject(secondFile);
 
                 var firstFileWithNoDuplicate = FileHelper.RemoveDuplicate(firstFile).ToList();
 

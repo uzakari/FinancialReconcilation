@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ikw1RwQlrFeAKGS20gXic3T/szu6BGytdISiUjBfARUniOewunwU5XHGOBpLoqqMLj9GtJM/BFSAWN3mAlDFdg==",
+  "dgSpecHash": "vxFW2JcSK9az4A97WwqOWOdNWOV9ixtuwN1AEupEmcpnosXLNHV83Yc26UfvoHRO9QeTmuoUavS3wxp9kuPZmA==",
   "success": true,
   "projectFilePath": "C:\\Users\\isau\\Documents\\Learning\\Tutuka_Project\\FinacialReconcilation\\Reconcilation.Management.Infrastructure\\Reconcilation.Management.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,7 @@
     "C:\\Users\\isau\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\isau\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\5.0.0\\microsoft.extensions.options.configurationextensions.5.0.0.nupkg.sha512",
     "C:\\Users\\isau\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\isau\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\isau\\.nuget\\packages\\serilog\\2.10.0\\serilog.2.10.0.nupkg.sha512",
     "C:\\Users\\isau\\.nuget\\packages\\serilog.extensions.logging\\3.0.1\\serilog.extensions.logging.3.0.1.nupkg.sha512",
     "C:\\Users\\isau\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512",

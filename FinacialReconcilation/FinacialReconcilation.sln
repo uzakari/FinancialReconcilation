@@ -23,9 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reconcilation.Management.Ap
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reconcilation.Management.Logging", "Reconcilation.Management.Logging\Reconcilation.Management.Logging.csproj", "{61A2140E-C086-40DA-8C41-C76EFDAB1C15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reconcilation.Management.Unittest", "Reconcilation.Management.Unittest\Reconcilation.Management.Unittest.csproj", "{0D49BB8E-8BA4-43EA-9C4D-79F96C44BC7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reconcilation.Management.Unittest", "Reconcilation.Management.Unittest\Reconcilation.Management.Unittest.csproj", "{0D49BB8E-8BA4-43EA-9C4D-79F96C44BC7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinacialReconcilation.Management.IntegrationTest", "FinacialReconcilation.Management.IntegrationTest\FinacialReconcilation.Management.IntegrationTest.csproj", "{CBF03D0D-18FD-40F3-AADE-9C88642BEF34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinacialReconcilation.Management.IntegrationTest", "FinacialReconcilation.Management.IntegrationTest\FinacialReconcilation.Management.IntegrationTest.csproj", "{CBF03D0D-18FD-40F3-AADE-9C88642BEF34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FInacialReconcilation.Management.FunctionalTest", "FInacialReconcilation.Management.FunctionalTest\FInacialReconcilation.Management.FunctionalTest.csproj", "{1594ADFC-B465-470B-95DF-972DDD21F957}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -109,6 +111,18 @@ Global
 		{CBF03D0D-18FD-40F3-AADE-9C88642BEF34}.Release|x64.Build.0 = Release|Any CPU
 		{CBF03D0D-18FD-40F3-AADE-9C88642BEF34}.Release|x86.ActiveCfg = Release|Any CPU
 		{CBF03D0D-18FD-40F3-AADE-9C88642BEF34}.Release|x86.Build.0 = Release|Any CPU
+		{1594ADFC-B465-470B-95DF-972DDD21F957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1594ADFC-B465-470B-95DF-972DDD21F957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1594ADFC-B465-470B-95DF-972DDD21F957}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1594ADFC-B465-470B-95DF-972DDD21F957}.Debug|x64.Build.0 = Debug|Any CPU
+		{1594ADFC-B465-470B-95DF-972DDD21F957}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1594ADFC-B465-470B-95DF-972DDD21F957}.Debug|x86.Build.0 = Debug|Any CPU
+		{1594ADFC-B465-470B-95DF-972DDD21F957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1594ADFC-B465-470B-95DF-972DDD21F957}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1594ADFC-B465-470B-95DF-972DDD21F957}.Release|x64.ActiveCfg = Release|Any CPU
+		{1594ADFC-B465-470B-95DF-972DDD21F957}.Release|x64.Build.0 = Release|Any CPU
+		{1594ADFC-B465-470B-95DF-972DDD21F957}.Release|x86.ActiveCfg = Release|Any CPU
+		{1594ADFC-B465-470B-95DF-972DDD21F957}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -124,6 +138,7 @@ Global
 		{61A2140E-C086-40DA-8C41-C76EFDAB1C15} = {E344B4F8-EFA2-4522-8B75-BEE79167E53E}
 		{0D49BB8E-8BA4-43EA-9C4D-79F96C44BC7C} = {C6120101-2816-47A9-8741-288176AB1C96}
 		{CBF03D0D-18FD-40F3-AADE-9C88642BEF34} = {C6120101-2816-47A9-8741-288176AB1C96}
+		{1594ADFC-B465-470B-95DF-972DDD21F957} = {C6120101-2816-47A9-8741-288176AB1C96}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DEEC41FE-4ED1-4AD0-9143-8D07AA0F7CDB}
