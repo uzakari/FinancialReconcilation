@@ -1,5 +1,4 @@
-﻿using GloboTicket.TicketManagement.API.IntegrationTests.Base;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Reconcilation.Management.Api;
 using Reconcilation.Management.Application.Features.FileParser.Query.CompareFile;
 using Reconcilation.Management.Application.Features.FileParser.Query.GetUnmatchFileResult;
