@@ -34,16 +34,18 @@ namespace Reconcilation.Management.Infrastructure.Helpers
         }
 
 
-        public static HashSet<FileFormat> RemoveDuplicate(List<FileFormat> firstFile)
+        public static HashSet<FileFormat> RemoveDuplicate(List<FileFormat> contents)
         {
-            var firstFileWithNoDuplicate = new HashSet<FileFormat>(new FileComparer());
+            var filesContent = new HashSet<FileFormat>(new FileComparer());
 
-            foreach (var item in firstFile)
+            foreach (var item in contents)
             {
-                firstFileWithNoDuplicate.Add(item);
+
+                filesContent.Add(item);
+
             }
 
-            return firstFileWithNoDuplicate;
+            return filesContent;
         }
 
         public static IEnumerable<FileFormatProjection> MatchedRecords(List<FileFormat> firstFile, List<FileFormat> secondFile)
@@ -58,16 +60,41 @@ namespace Reconcilation.Management.Infrastructure.Helpers
                 f.TransactionNarrative,
                 f.WalletReference,
                 f.TransactionType
-            }, s => new { s.ProfileName,s.TransactionId, s.TransactionAmount,s.TransactionDate,
-                                                                            s.TransactionDescription,
-                                                                            s.TransactionNarrative,
-                                                                            s.WalletReference,
-                                                                            s.TransactionType
-                                                                        }, (f, s) => new FileFormatProjection
-                                                                        { 
-                                                                            firstFile = f,
-                                                                            secondFile = s
-                                                                        });
+            }, s => new
+            {
+                s.ProfileName,
+                s.TransactionId,
+                s.TransactionAmount,
+                s.TransactionDate,
+                s.TransactionDescription,
+                s.TransactionNarrative,
+                s.WalletReference,
+                s.TransactionType
+            }, (f, s) => new FileFormatProjection
+            {
+                firstFile = f,
+                secondFile = s
+            });
+        }
+
+
+        public static IEnumerable<FileFormatProjection> PartialMatchedRecords(List<FileFormat> firstFile, List<FileFormat> secondFile)
+        {
+            return firstFile.Join(secondFile, f => new
+            {
+                f.TransactionDate,
+                f.WalletReference,
+                f.TransactionType
+            }, s => new
+            {
+                s.TransactionDate,
+                s.WalletReference,
+                s.TransactionType
+            }, (f, s) => new FileFormatProjection
+            {
+                firstFile = f,
+                secondFile = s
+            });
         }
 
 

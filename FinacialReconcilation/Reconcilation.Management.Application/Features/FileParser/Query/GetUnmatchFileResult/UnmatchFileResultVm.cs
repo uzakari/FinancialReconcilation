@@ -7,12 +7,8 @@ using System.Threading.Tasks;
 
 namespace Reconcilation.Management.Application.Features.FileParser.Query.GetUnmatchFileResult
 {
-    public class UnmatchFileResultVm: BaseResponse
+    public class UnmatchFileResultVm
     {
-        public UnmatchFileResultVm():base()
-        {
-
-        }
         public string FileName { get; set; }
 
         public List<UnmatchFileResultContent> UnmatchFileResultContents { get; set; } = new List<UnmatchFileResultContent>();

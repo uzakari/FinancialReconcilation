@@ -15,5 +15,7 @@ namespace Reconcilation.Management.Application.Features.FileParser.Query.Compare
         public int MatchingRecords { get; set; }
 
         public int UnmatchingRecords { get; set; }
+
+        public int PartialMatchRecords { get; set; }
     }
 }

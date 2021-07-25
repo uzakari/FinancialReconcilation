@@ -33,8 +33,16 @@ namespace Reconcilation.Management.Api
             services.AddApplicationServices();
 
             services.AddInfrastructureServcies(Configuration);
+            // health checks added for ci/cd if it's ok to rout https request
+            services.AddHealthChecks();
 
             services.AddControllers();
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("Open", builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+            });
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Reconcilation.Management.Api", Version = "v1" });
@@ -63,6 +71,9 @@ namespace Reconcilation.Management.Api
 
             app.UseEndpoints(endpoints =>
             {
+                // this will return a 200 status to ensure the servcie can handle http request
+                endpoints.MapHealthChecks("/health/live");
+
                 endpoints.MapControllers();
             });
         }

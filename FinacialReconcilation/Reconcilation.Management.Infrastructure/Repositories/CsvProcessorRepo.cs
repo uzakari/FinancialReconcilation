@@ -63,9 +63,14 @@ namespace Reconcilation.Management.Infrastructure.Repositories
 
                 var secondFile = FileHelper.GetFileContent(unmatchResultQuery.SecondFile);
 
-                var unmatchRecordFirst = firstFile.Except(secondFile, new FileComparer());
 
-                var unmatchRecordSecond = secondFile.Except(firstFile, new FileComparer());
+                var firstFileWithNoDuplicate = FileHelper.RemoveDuplicate(firstFile).ToList();
+
+                var secondFileWithNoDuplicate = FileHelper.RemoveDuplicate(secondFile).ToList();
+
+                var unmatchRecordFirst = firstFileWithNoDuplicate.Except(secondFileWithNoDuplicate, new FileComparer());
+
+                var unmatchRecordSecond = secondFileWithNoDuplicate.Except(firstFileWithNoDuplicate, new FileComparer());
 
                 var firstFileTransformContent = FileHelper.GetUnmatchRecord(unmatchRecordFirst, unmatchResultQuery?.FirstFile.FileName);
 
@@ -97,7 +102,6 @@ namespace Reconcilation.Management.Infrastructure.Repositories
             {
                 _logger.LogInformation("About to get the content of the first file");
 
-
                 var firstFile = FileHelper.GetFileContent(files.FirstFile);
 
                 _logger.LogInformation("About to get the content of the second file");
@@ -110,6 +114,9 @@ namespace Reconcilation.Management.Infrastructure.Repositories
 
                 var matchingRecored = FileHelper.MatchedRecords(firstFile, secondFile);
 
+                // we can try to reduce the nuber of checks for partial match records
+
+                var partialMatchedRecords = FileHelper.PartialMatchedRecords(firstFileWithNoDuplicate, secondFileWithNoDuplicate);
 
                 var unmatchRecordFirst = firstFileWithNoDuplicate.Except(secondFileWithNoDuplicate, new FileComparer());
 
@@ -121,7 +128,8 @@ namespace Reconcilation.Management.Infrastructure.Repositories
                     FileName = files.FirstFile.FileName,
                     MatchingRecords = matchingRecored.Count(),
                     TotalRecords = firstFile.Count,
-                    UnmatchingRecords = unmatchRecordFirst.Count()
+                    UnmatchingRecords = unmatchRecordFirst.Count(),
+                    PartialMatchRecords =partialMatchedRecords.Count()
 
                 });
 
@@ -130,7 +138,8 @@ namespace Reconcilation.Management.Infrastructure.Repositories
                     FileName = files.SecondFile.FileName,
                     MatchingRecords = matchingRecored.Count(),
                     TotalRecords = secondFile.Count,
-                    UnmatchingRecords = unmatchRecordSecond.Count()
+                    UnmatchingRecords = unmatchRecordSecond.Count(),
+                    PartialMatchRecords = partialMatchedRecords.Count()
 
                 });
             }

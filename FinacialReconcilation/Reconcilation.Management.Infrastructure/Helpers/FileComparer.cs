@@ -13,6 +13,7 @@ namespace Reconcilation.Management.Infrastructure.Helpers
 
         public bool Equals(FileFormat x, FileFormat y)
         {
+
             return IsSame(x, y);
         }
 
@@ -37,10 +38,10 @@ namespace Reconcilation.Management.Infrastructure.Helpers
         private bool IsSame(FileFormat x, FileFormat y)
         {
             return (x.TransactionId == y.TransactionId  && x.TransactionType == y.TransactionType 
-                   && x.TransactionAmount == y.TransactionAmount && x.TransactionDate == y.TransactionDate
+                   && x.TransactionAmount == y.TransactionAmount && x.TransactionDate.UtcDateTime == y.TransactionDate.UtcDateTime
                             && x.TransactionDescription.ToLower().Trim() == y.TransactionDescription.ToLower().Trim() &&
                             x.TransactionNarrative.ToLower().Trim() == y.TransactionNarrative.ToLower().Trim() &&
-                            x.WalletReference.ToLower().Trim() == y.WalletReference.ToLower().Trim());
+                            x.WalletReference.ToLower().Trim().Length == y.WalletReference.ToLower().Trim().Length && x.WalletReference.ToLower().Trim() == y.WalletReference.ToLower().Trim());
         }
 
 
