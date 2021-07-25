@@ -2,6 +2,7 @@
 using Newtonsoft.Json;
 using Reconcilation.Management.Api;
 using Reconcilation.Management.Application.Features.FileParser.Query.CompareFile;
+using Reconcilation.Management.Application.Features.FileParser.Query.GetUnmatchFileResult;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -38,48 +39,35 @@ namespace FinacialReconcilation.Management.IntegrationTest.Controllers
         }
 
         [Fact]
-        public async Task UploadFileTest()
+        public async Task UploadFileAndGetCompareVmTest()
         {
             var clientfactory = _factory.GetAnonymousClient();
 
             var result = new FileCompareResultVm();
 
-            result = await UploadFileAndResult(clientfactory, result);
+            var endpoint = "/api/FileUpload";
+
+            result = await _factory.UploadFileAndResult(clientfactory, result, endpoint);
+
             Assert.IsType<FileCompareResultVm>(result);
         }
 
-        private static async Task<T> UploadFileAndResult<T>(HttpClient clientfactory, T result)
+        [Fact]
+        public async Task GetUnmatchFileRecordVmTest()
         {
-            var filesInDir = Directory.GetFiles("C:/Users/isau/Documents/Learning/Tutuka_Project/FinacialReconcilation/FileUploadTest");
+            var clientfactory = _factory.GetAnonymousClient();
 
-            if (filesInDir.Where(f => f.EndsWith(".csv")).Count() == 2)
-            {
-                byte[] Firstbytes = File.ReadAllBytes(filesInDir[0]);
+            var result = new List<UnmatchFileResultVm>();
 
-                var byteArrayContentF1 = new ByteArrayContent(Firstbytes);
-                byteArrayContentF1.Headers.ContentType = MediaTypeHeaderValue.Parse("text/csv");
+            var endpoint = "/api/FileUpload/unmatchfileresult";
 
-                byte[] Secondbytes = File.ReadAllBytes(filesInDir[1]);
+            result = await _factory.UploadFileAndResult(clientfactory, result, endpoint);
 
-                var byteArrayContentSecond = new ByteArrayContent(Secondbytes);
-                byteArrayContentSecond.Headers.ContentType = MediaTypeHeaderValue.Parse("text/csv");
-                using (var content = new MultipartFormDataContent())
-                {
-                    content.Add(byteArrayContentF1, "firstFile", "firstFile.csv");
-                    content.Add(byteArrayContentSecond, "secondFile", "secondFile.csv");
-
-                    using (var message = await clientfactory.PostAsync("/api/FileUpload", content))
-                    {
-                        var input = await message.Content.ReadAsStringAsync();
-
-                        result = JsonConvert.DeserializeObject<T>(input);
-                    }
-                }
-
-            }
-
-            return result;
+            Assert.IsType<List<UnmatchFileResultVm>>(result);
         }
+
+
+
     }
 }
 
