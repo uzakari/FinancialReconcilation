@@ -63,6 +63,10 @@ namespace Reconcilation.Management.Api
 
             app.UseHttpsRedirection();
 
+            app.UseAuthentication();
+
+            app.UseAuthorization();
+
             app.UseRouting();
 
             app.UseCors("Open");

@@ -28,9 +28,21 @@ namespace Reconcilation.Management.Application.Features.FileParser.Query.GetUnma
             var validationResult = await validator.ValidateAsync(request);
 
             if (validationResult.Errors.Count > 0)
-                throw new Exceptions.ValidationException(validationResult);
+            {
+                fileCompareResultResponse.ForEach(a => {
+                    a.Success = false;
+                    a.ValidationErrors = new List<string>();
+                    foreach (var error in validationResult.Errors)
+                    {
+                        a.ValidationErrors.Add(error.ErrorMessage);
+                    }
+                });
+            }
+            else
+            {
+                fileCompareResultResponse = await _csvProcessor.GetUnmatchFileResultUploaded(request);
+            }
 
-            fileCompareResultResponse = await _csvProcessor.GetUnmatchFileResultUploaded(request);
 
             return fileCompareResultResponse;
 

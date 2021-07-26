@@ -11,7 +11,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 
-namespace GloboTicket.TicketManagement.API.IntegrationTests.Base
+namespace FinacialReconcilation.Management.IntegrationTest.Base
 {
     public class CustomWebApplicationFactory<TStartup>
             : WebApplicationFactory<TStartup> where TStartup : class

@@ -12,5 +12,9 @@ namespace Reconcilation.Management.Application.Features.FileParser.Query.GetUnma
         public string FileName { get; set; }
 
         public List<UnmatchFileResultContent> UnmatchFileResultContents { get; set; } = new List<UnmatchFileResultContent>();
+
+        public bool Success { get; set; } = true;
+        public string Message { get; set; }
+        public List<string> ValidationErrors { get; set; }
     }
 }

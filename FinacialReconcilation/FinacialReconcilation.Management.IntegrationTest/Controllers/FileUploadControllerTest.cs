@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using FinacialReconcilation.Management.IntegrationTest.Base;
+using Newtonsoft.Json;
 using Reconcilation.Management.Api;
 using Reconcilation.Management.Application.Features.FileParser.Query.CompareFile;
 using Reconcilation.Management.Application.Features.FileParser.Query.GetUnmatchFileResult;
