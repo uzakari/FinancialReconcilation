@@ -96,6 +96,21 @@
           "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Authentication.JwtBearer/5.0.8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.7.1"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.Authentication.OpenIdConnect/5.0.8": {
         "type": "package",
         "dependencies": {
@@ -1149,6 +1164,20 @@
           "bin/placeholder/Reconcilation.Management.Application.dll": {}
         }
       },
+      "Reconcilation.Management.Identity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "5.0.8",
+          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "5.0.8"
+        },
+        "compile": {
+          "bin/placeholder/Reconcilation.Management.Identity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reconcilation.Management.Identity.dll": {}
+        }
+      },
       "Reconcilation.Management.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -1326,6 +1355,21 @@
         "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll",
         "mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
         "mediatr.extensions.microsoft.dependencyinjection.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.JwtBearer/5.0.8": {
+      "sha512": "5XuTlEkJe7tzY1UQ0FndajTv/SB4PPaYRaAokZVGevoHTkioEF2bbvPxhrqaYr7ayHaN1KItzKsAwMWGil6wRg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/5.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net5.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll",
+        "lib/net5.0/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
+        "microsoft.aspnetcore.authentication.jwtbearer.5.0.8.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authentication.OpenIdConnect/5.0.8": {
@@ -4261,6 +4305,11 @@
       "path": "../Reconcilation.Management.Application/Reconcilation.Management.Application.csproj",
       "msbuildProject": "../Reconcilation.Management.Application/Reconcilation.Management.Application.csproj"
     },
+    "Reconcilation.Management.Identity/1.0.0": {
+      "type": "project",
+      "path": "../Reconcilation.Management.Identity/Reconcilation.Management.Identity.csproj",
+      "msbuildProject": "../Reconcilation.Management.Identity/Reconcilation.Management.Identity.csproj"
+    },
     "Reconcilation.Management.Infrastructure/1.0.0": {
       "type": "project",
       "path": "../Reconcilation.Management.Infrastructure/Reconcilation.Management.Infrastructure.csproj",
@@ -4277,6 +4326,7 @@
       "MediatR.Extensions.Microsoft.DependencyInjection >= 9.0.0",
       "Microsoft.AspNetCore.Authentication.OpenIdConnect >= 5.0.8",
       "Reconcilation.Management.Application >= 1.0.0",
+      "Reconcilation.Management.Identity >= 1.0.0",
       "Reconcilation.Management.Infrastructure >= 1.0.0",
       "Reconcilation.Management.Logging >= 1.0.0",
       "Serilog.AspNetCore >= 4.1.0",
@@ -4313,6 +4363,9 @@
           "projectReferences": {
             "C:\\Users\\isau\\Documents\\Learning\\Tutuka_Project\\FinacialReconcilation\\Reconcilation.Management.Application\\Reconcilation.Management.Application.csproj": {
               "projectPath": "C:\\Users\\isau\\Documents\\Learning\\Tutuka_Project\\FinacialReconcilation\\Reconcilation.Management.Application\\Reconcilation.Management.Application.csproj"
+            },
+            "C:\\Users\\isau\\Documents\\Learning\\Tutuka_Project\\FinacialReconcilation\\Reconcilation.Management.Identity\\Reconcilation.Management.Identity.csproj": {
+              "projectPath": "C:\\Users\\isau\\Documents\\Learning\\Tutuka_Project\\FinacialReconcilation\\Reconcilation.Management.Identity\\Reconcilation.Management.Identity.csproj"
             },
             "C:\\Users\\isau\\Documents\\Learning\\Tutuka_Project\\FinacialReconcilation\\Reconcilation.Management.Infrastructure\\Reconcilation.Management.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\isau\\Documents\\Learning\\Tutuka_Project\\FinacialReconcilation\\Reconcilation.Management.Infrastructure\\Reconcilation.Management.Infrastructure.csproj"

@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Reconcilation.Management.Application\Reconcilation.Management.Application.csproj" />
+    <ProjectReference Include="..\Reconcilation.Management.Identity\Reconcilation.Management.Identity.csproj" />
     <ProjectReference Include="..\Reconcilation.Management.Infrastructure\Reconcilation.Management.Infrastructure.csproj" />
     <ProjectReference Include="..\Reconcilation.Management.Logging\Reconcilation.Management.Logging.csproj" />
   </ItemGroup>

@@ -114,6 +114,13 @@ namespace Reconcilation.Management.Infrastructure.Helpers
 
             return unmatchFileResultVm;
         }
+
+
+        public static IEnumerable<FileFormat> FilterUnmatchRecords(List<FileFormat> listToReturn, List<FileFormat> listToExemptContent)
+        {
+            return listToReturn.Except(listToExemptContent, new FileComparer());
+        }
+
     }
 
 }

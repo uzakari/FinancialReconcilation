@@ -1,4 +1,9 @@
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FInacialReconcilation.Management.FunctionalTest\bin\Debug\net5.0\CoverletSourceRootsMapping
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FInacialReconcilation.Management.FunctionalTest\obj\Debug\net5.0\FInacialReconcilation.Management.FunctionalTest.csproj.AssemblyReference.cache
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FInacialReconcilation.Management.FunctionalTest\obj\Debug\net5.0\FInacialReconcilation.Management.FunctionalTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FInacialReconcilation.Management.FunctionalTest\obj\Debug\net5.0\FInacialReconcilation.Management.FunctionalTest.AssemblyInfoInputs.cache
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FInacialReconcilation.Management.FunctionalTest\obj\Debug\net5.0\FInacialReconcilation.Management.FunctionalTest.AssemblyInfo.cs
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FInacialReconcilation.Management.FunctionalTest\obj\Debug\net5.0\FInacialReconcilation.Management.FunctionalTest.csproj.CoreCompileInputs.cache
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FInacialReconcilation.Management.FunctionalTest\bin\Debug\net5.0\testhost.dll
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FInacialReconcilation.Management.FunctionalTest\bin\Debug\net5.0\testhost.exe
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FInacialReconcilation.Management.FunctionalTest\bin\Debug\net5.0\Microsoft.TestPlatform.PlatformAbstractions.dll
@@ -113,11 +118,6 @@ C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FInacialRe
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FInacialReconcilation.Management.FunctionalTest\bin\Debug\net5.0\Reconcilation.Management.Infrastructure.dll
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FInacialReconcilation.Management.FunctionalTest\bin\Debug\net5.0\Reconcilation.Management.Application.pdb
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FInacialReconcilation.Management.FunctionalTest\bin\Debug\net5.0\Reconcilation.Management.Infrastructure.pdb
-C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FInacialReconcilation.Management.FunctionalTest\obj\Debug\net5.0\FInacialReconcilation.Management.FunctionalTest.csproj.AssemblyReference.cache
-C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FInacialReconcilation.Management.FunctionalTest\obj\Debug\net5.0\FInacialReconcilation.Management.FunctionalTest.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FInacialReconcilation.Management.FunctionalTest\obj\Debug\net5.0\FInacialReconcilation.Management.FunctionalTest.AssemblyInfoInputs.cache
-C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FInacialReconcilation.Management.FunctionalTest\obj\Debug\net5.0\FInacialReconcilation.Management.FunctionalTest.AssemblyInfo.cs
-C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FInacialReconcilation.Management.FunctionalTest\obj\Debug\net5.0\FInacialReconcilation.Management.FunctionalTest.csproj.CoreCompileInputs.cache
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FInacialReconcilation.Management.FunctionalTest\obj\Debug\net5.0\FInacialReconcilation.Management.FunctionalTest.csproj.CopyComplete
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FInacialReconcilation.Management.FunctionalTest\obj\Debug\net5.0\FInacialReconcilation.Management.FunctionalTest.dll
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FInacialReconcilation.Management.FunctionalTest\obj\Debug\net5.0\ref\FInacialReconcilation.Management.FunctionalTest.dll

@@ -36,6 +36,7 @@
           "MediatR.Extensions.Microsoft.DependencyInjection": "9.0.0",
           "Microsoft.AspNetCore.Authentication.OpenIdConnect": "5.0.8",
           "Reconcilation.Management.Application": "1.0.0",
+          "Reconcilation.Management.Identity": "1.0.0",
           "Reconcilation.Management.Infrastructure": "1.0.0",
           "Reconcilation.Management.Logging": "1.0.0",
           "Serilog.AspNetCore": "4.1.0",
@@ -436,6 +437,20 @@
         },
         "compile": {
           "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.JwtBearer/5.0.8": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.7.1"
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "assemblyVersion": "5.0.8.0",
+            "fileVersion": "5.0.821.31805"
+          }
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
         }
       },
       "Microsoft.AspNetCore.Authentication.OpenIdConnect/5.0.8": {
@@ -1217,6 +1232,18 @@
         },
         "compile": {
           "Reconcilation.Management.Application.dll": {}
+        }
+      },
+      "Reconcilation.Management.Identity/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "5.0.8",
+          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "5.0.8"
+        },
+        "runtime": {
+          "Reconcilation.Management.Identity.dll": {}
+        },
+        "compile": {
+          "Reconcilation.Management.Identity.dll": {}
         }
       },
       "Reconcilation.Management.Infrastructure/1.0.0": {
@@ -2997,6 +3024,13 @@
       "path": "mediatr.extensions.microsoft.dependencyinjection/9.0.0",
       "hashPath": "mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.Authentication.JwtBearer/5.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5XuTlEkJe7tzY1UQ0FndajTv/SB4PPaYRaAokZVGevoHTkioEF2bbvPxhrqaYr7ayHaN1KItzKsAwMWGil6wRg==",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/5.0.8",
+      "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.5.0.8.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Authentication.OpenIdConnect/5.0.8": {
       "type": "package",
       "serviceable": true,
@@ -3551,6 +3585,11 @@
       "hashPath": "system.threading.timer.4.0.1.nupkg.sha512"
     },
     "Reconcilation.Management.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Reconcilation.Management.Identity/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

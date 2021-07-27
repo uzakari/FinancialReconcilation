@@ -1,54 +1,42 @@
-﻿using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.AspNetCore.Authentication.OpenIdConnect;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.IdentityModel.Protocols.OpenIdConnect;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
+using Reconcilation.Management.Identity.Services;
 
 namespace Reconcilation.Management.Identity.Configurations
 {
     public static class InfrastructureIdentityServiceRegisteration
     {
 
-        public static IServiceCollection AddInfrastructureServcies(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddInfrastructureIdentityServcies(this IServiceCollection services, IConfiguration configuration)
         {
 
 
-                services.AddAuthentication(options =>
+            string domain = $"https://{configuration["Auth0:Domain"]}/";
+            services
+                .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
                 {
-                    options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-                    options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-                    options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-                })
-               .AddCookie()
-               .AddOpenIdConnect("Auth0", options =>
-               {
-                   // Set the authority to your Auth0 domain
-                   options.Authority = $"https://{configuration["Auth0:Domain"]}";
+                    options.Authority = domain;
+                    options.Audience = configuration["Auth0:Audience"];
+                   // If the access token does not have a `sub` claim, `User.Identity.Name` will be `null`. Map it to a different claim by setting the NameClaimType below.
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        NameClaimType = ClaimTypes.NameIdentifier
+                    };
+                });
 
-                   // Configure the Auth0 Client ID and Client Secret
-                   options.ClientId = configuration["Auth0:ClientId"];
-                   options.ClientSecret = configuration["Auth0:ClientSecret"];
 
-                   // Set response type to code
-                   options.ResponseType = OpenIdConnectResponseType.Code;
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("read:messages", policy => policy.Requirements.Add(new HasScopeRequirement("read:messages", domain)));
+            });
 
-                   // Configure the scope
-                   options.Scope.Clear();
-                   options.Scope.Add("openid");
+           // services.AddSingleton<IAuthorizationHandler, HasScopedHandler>();
 
-                   // Set the callback path, so Auth0 will call back to http://localhost:3000/callback
-                   // Also ensure that you have added the URL as an Allowed Callback URL in your Auth0 dashboard
-                   options.CallbackPath = new PathString("/callback");
-
-                   // Configure the Claims Issuer to be Auth0
-                   options.ClaimsIssuer = "Auth0";
-               });
 
             return services;
         }

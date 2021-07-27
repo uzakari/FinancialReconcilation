@@ -17,6 +17,9 @@ using System.Reflection;
 [assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Reconcilation.Management.Application, Version=1.0.0.0, Culture=neutral, PublicKey" +
     "Token=null", "C:\\Users\\isau\\Documents\\Learning\\Tutuka_Project\\FinacialReconcilation\\Reconcilati" +
     "on.Management.Application", "Reconcilation.Management.Application.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Reconcilation.Management.Identity, Version=1.0.0.0, Culture=neutral, PublicKeyTok" +
+    "en=null", "C:\\Users\\isau\\Documents\\Learning\\Tutuka_Project\\FinacialReconcilation\\Reconcilati" +
+    "on.Management.Identity", "Reconcilation.Management.Identity.csproj", "0")]
 [assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Reconcilation.Management.Infrastructure, Version=1.0.0.0, Culture=neutral, Public" +
     "KeyToken=null", "C:\\Users\\isau\\Documents\\Learning\\Tutuka_Project\\FinacialReconcilation\\Reconcilati" +
     "on.Management.Infrastructure", "Reconcilation.Management.Infrastructure.csproj", "0")]

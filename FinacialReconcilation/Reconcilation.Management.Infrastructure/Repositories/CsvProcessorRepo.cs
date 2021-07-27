@@ -54,8 +54,6 @@ namespace Reconcilation.Management.Infrastructure.Repositories
 
             try
             {
-
-
                 _logger.LogInformation("About to get the content of the first file");
 
                 var firstFile = FileHelper.GetFileContent(unmatchResultQuery.FirstFile);
@@ -64,14 +62,13 @@ namespace Reconcilation.Management.Infrastructure.Repositories
 
                 var secondFile = FileHelper.GetFileContent(unmatchResultQuery.SecondFile);
 
-
                 var firstFileWithNoDuplicate = FileHelper.RemoveDuplicate(firstFile).ToList();
 
                 var secondFileWithNoDuplicate = FileHelper.RemoveDuplicate(secondFile).ToList();
 
-                var unmatchRecordFirst = firstFileWithNoDuplicate.Except(secondFileWithNoDuplicate, new FileComparer());
+                var unmatchRecordFirst = FileHelper.FilterUnmatchRecords(firstFileWithNoDuplicate, secondFileWithNoDuplicate);
 
-                var unmatchRecordSecond = secondFileWithNoDuplicate.Except(firstFileWithNoDuplicate, new FileComparer());
+                var unmatchRecordSecond = FileHelper.FilterUnmatchRecords(secondFileWithNoDuplicate, firstFileWithNoDuplicate);
 
                 var firstFileTransformContent = FileHelper.GetUnmatchRecord(unmatchRecordFirst, unmatchResultQuery?.FirstFile.FileName);
 
@@ -93,7 +90,7 @@ namespace Reconcilation.Management.Infrastructure.Repositories
             return Task.FromResult(unmatchFileResultResponse);
         }
 
-     
+      
 
         public Task<List<FileCompareDto>> ProcessUploadedCsvFile(GetFilesCompareQuery files)
         {
@@ -105,13 +102,9 @@ namespace Reconcilation.Management.Infrastructure.Repositories
 
                 var firstFile = FileHelper.GetFileContent(files.FirstFile);
 
-                var tt = JsonConvert.SerializeObject(firstFile);
-
                 _logger.LogInformation("About to get the content of the second file");
 
                 var secondFile = FileHelper.GetFileContent(files.SecondFile);
-
-                var dd = JsonConvert.SerializeObject(secondFile);
 
                 var firstFileWithNoDuplicate = FileHelper.RemoveDuplicate(firstFile).ToList();
 

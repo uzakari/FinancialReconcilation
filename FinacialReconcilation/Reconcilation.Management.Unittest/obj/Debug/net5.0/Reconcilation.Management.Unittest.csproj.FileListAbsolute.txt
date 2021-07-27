@@ -60,12 +60,17 @@ C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilat
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Unittest\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Unittest\bin\Debug\net5.0\MediatR.dll
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Unittest\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Unittest\bin\Debug\net5.0\Microsoft.AspNetCore.Http.dll
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Unittest\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Abstractions.dll
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Unittest\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Unittest\bin\Debug\net5.0\Microsoft.AspNetCore.WebUtilities.dll
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Unittest\bin\Debug\net5.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Unittest\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Unittest\bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Unittest\bin\Debug\net5.0\Microsoft.Extensions.ObjectPool.dll
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Unittest\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Unittest\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Unittest\bin\Debug\net5.0\Microsoft.Net.Http.Headers.dll
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Unittest\bin\Debug\net5.0\Microsoft.TestPlatform.CoreUtilities.dll
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Unittest\bin\Debug\net5.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Unittest\bin\Debug\net5.0\Microsoft.TestPlatform.CommunicationUtilities.dll
@@ -227,8 +232,3 @@ C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilat
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Unittest\obj\Debug\net5.0\Reconcilation.Management.Unittest.dll
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Unittest\obj\Debug\net5.0\ref\Reconcilation.Management.Unittest.dll
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Unittest\obj\Debug\net5.0\Reconcilation.Management.Unittest.genruntimeconfig.cache
-C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Unittest\bin\Debug\net5.0\Microsoft.AspNetCore.Http.dll
-C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Unittest\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Abstractions.dll
-C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Unittest\bin\Debug\net5.0\Microsoft.AspNetCore.WebUtilities.dll
-C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Unittest\bin\Debug\net5.0\Microsoft.Extensions.ObjectPool.dll
-C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Unittest\bin\Debug\net5.0\Microsoft.Net.Http.Headers.dll

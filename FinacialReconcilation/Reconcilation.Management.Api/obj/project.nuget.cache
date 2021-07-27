@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eDm0Iynv0bO8LtzcnC506gf9CsuljvTjQxqXcHcBcm0Ri7ktKY/Ewp5lnI/A1ESPfQBMdZcpqATi4RZtPQ0oPw==",
+  "dgSpecHash": "BKXM6RVOsA8W/4ZCe+ZN8CD0SPWU2OHaS3H5I1jqlPd8eTiSMX26II3w2FD4p+5pjox6qf+iLHK/XmTvR0Enrw==",
   "success": true,
   "projectFilePath": "C:\\Users\\isau\\Documents\\Learning\\Tutuka_Project\\FinacialReconcilation\\Reconcilation.Management.Api\\Reconcilation.Management.Api.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\isau\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.0\\fluentvalidation.dependencyinjectionextensions.10.3.0.nupkg.sha512",
     "C:\\Users\\isau\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\isau\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
+    "C:\\Users\\isau\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.8\\microsoft.aspnetcore.authentication.jwtbearer.5.0.8.nupkg.sha512",
     "C:\\Users\\isau\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\5.0.8\\microsoft.aspnetcore.authentication.openidconnect.5.0.8.nupkg.sha512",
     "C:\\Users\\isau\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.8\\microsoft.aspnetcore.http.features.5.0.8.nupkg.sha512",
     "C:\\Users\\isau\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
