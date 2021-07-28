@@ -112,13 +112,13 @@ namespace Reconcilation.Management.Infrastructure.Repositories
 
                 var matchingRecored = FileHelper.MatchedRecords(firstFile, secondFile);
 
-                // we can try to reduce the nuber of checks for partial match records
+                // we can try to reduce the number of checks to get partially match records.
 
                 var partialMatchedRecords = FileHelper.PartialMatchedRecords(firstFileWithNoDuplicate, secondFileWithNoDuplicate);
+                
+                var unmatchRecordFirst = FileHelper.FilterUnmatchRecords(firstFileWithNoDuplicate, secondFileWithNoDuplicate);
 
-                var unmatchRecordFirst = firstFileWithNoDuplicate.Except(secondFileWithNoDuplicate, new FileComparer());
-
-                var unmatchRecordSecond = secondFileWithNoDuplicate.Except(firstFileWithNoDuplicate, new FileComparer());
+                var unmatchRecordSecond = FileHelper.FilterUnmatchRecords(secondFileWithNoDuplicate, firstFileWithNoDuplicate);
 
 
                 fileListCompareResult.Add(new FileCompareDto

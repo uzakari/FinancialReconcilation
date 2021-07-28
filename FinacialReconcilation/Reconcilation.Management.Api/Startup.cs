@@ -40,11 +40,14 @@ namespace Reconcilation.Management.Api
                 options.AddPolicy("Open", builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
             });
 
-            AddSwagger(services);
-            //services.AddSwaggerGen(c =>
-            //{
-            //    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Reconcilation.Management.Api", Version = "v1" });
-            //});
+            #region To be added for authorization
+            //AddSwagger(services);
+
+            #endregion
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Reconcilation.Management.Api", Version = "v1" });
+            });
         }
 
 

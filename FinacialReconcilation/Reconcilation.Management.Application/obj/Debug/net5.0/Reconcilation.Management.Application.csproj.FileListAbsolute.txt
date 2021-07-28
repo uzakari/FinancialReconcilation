@@ -9,3 +9,4 @@ C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilat
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Application\obj\Debug\net5.0\Reconcilation.Management.Application.dll
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Application\obj\Debug\net5.0\ref\Reconcilation.Management.Application.dll
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Application\obj\Debug\net5.0\Reconcilation.Management.Application.pdb
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Application\obj\Debug\net5.0\Reconcilation.Management.Application.csproj.AssemblyReference.cache

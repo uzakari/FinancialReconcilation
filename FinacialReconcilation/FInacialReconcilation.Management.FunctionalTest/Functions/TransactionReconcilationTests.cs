@@ -353,7 +353,7 @@ namespace FInacialReconcilation.Management.FunctionalTest.Functions
                 }
             };
 
-            var unmatchRecord = firstFileContent.Except(secondFileContent, new FileComparer());
+            var unmatchRecord = FileHelper.FilterUnmatchRecords(firstFileContent, secondFileContent);
 
             Assert.Single(unmatchRecord);
 

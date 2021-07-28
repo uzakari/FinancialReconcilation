@@ -21,6 +21,7 @@ namespace Reconcilation.Management.Application.Features.FileParser.Query.Compare
 
         public async Task<FileCompareResultVm> Handle(GetFilesCompareQuery request, CancellationToken cancellationToken)
         {
+
             var fileCompareResultResponse = new FileCompareResultVm();
 
             var validator = new GetFileCompareValidator();

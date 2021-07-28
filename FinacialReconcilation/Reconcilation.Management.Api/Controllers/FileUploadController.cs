@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Reconcilation.Management.Application.Features.FileParser.Query.CompareFile;
 using Reconcilation.Management.Application.Features.FileParser.Query.ExportUnmatchFileResult;
 using Reconcilation.Management.Application.Features.FileParser.Query.GetUnmatchFileResult;
@@ -17,12 +18,16 @@ namespace Reconcilation.Management.Api.Controllers
     public class FileUploadController : Controller
     {
 
-        public readonly IMediator _mediator;
+        private readonly IMediator _mediator;
+
+        private readonly ILogger<FileUploadController> _logger;
 
 
-        public FileUploadController(IMediator mediator)
+        public FileUploadController(IMediator mediator, ILogger<FileUploadController> logger)
         {
             _mediator = mediator;
+
+            _logger = logger;
         }
 
         [HttpPost]
@@ -31,6 +36,8 @@ namespace Reconcilation.Management.Api.Controllers
 
         public async Task<ActionResult<FileCompareResultVm>> GetFileCompareResult([FromForm] GetFilesCompareQuery getFilesCompareQuery)
         {
+            _logger.LogInformation($"About to call {nameof(GetFilesCompareQuery)} handler");
+
             var compareFileResultVm = await _mediator.Send(getFilesCompareQuery);
 
             return Ok(compareFileResultVm);
@@ -43,6 +50,8 @@ namespace Reconcilation.Management.Api.Controllers
 
         public async Task<ActionResult<List<UnmatchFileResultVm>>> GetFileUnmatchResult([FromForm] UnmatchResultQuery unmatchResultQuery)
         {
+            _logger.LogInformation($"About to call {nameof(UnmatchResultQuery)} handler");
+
             var unmatchFileResultVms = await _mediator.Send(unmatchResultQuery);
 
             return Ok(unmatchFileResultVms);
@@ -52,7 +61,11 @@ namespace Reconcilation.Management.Api.Controllers
         [HttpGet("exportUnmatchResults")]
         public async Task<FileResult> ExportEvent()
         {
+
             var exportEventQuery = new GetExportFileQuery();
+
+            _logger.LogInformation($"About to call {nameof(GetExportFileQuery)} handler");
+
 
             var exportEventResult = await _mediator.Send(exportEventQuery);
 
