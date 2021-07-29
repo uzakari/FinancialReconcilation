@@ -9,6 +9,7 @@ using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace FinacialReconcilation.Management.IntegrationTest.Base
@@ -39,7 +40,11 @@ namespace FinacialReconcilation.Management.IntegrationTest.Base
 
         public async Task<T> UploadFileAndResult<T>(HttpClient clientfactory, T result, string endpoint)
         {
-            var filesInDir = Directory.GetFiles("C:/Users/isau/Documents/Learning/Tutuka_Project/FinacialReconcilation/FileUploadTest");
+            // please specify the directory on c path
+            var currentDirectory = Directory.GetCurrentDirectory();
+            var filePath = System.IO.Path.Combine(currentDirectory, "Uploads");
+
+            var filesInDir = Directory.GetFiles(filePath);
 
             if (filesInDir.Where(f => f.EndsWith(".csv")).Count() == 2)
             {

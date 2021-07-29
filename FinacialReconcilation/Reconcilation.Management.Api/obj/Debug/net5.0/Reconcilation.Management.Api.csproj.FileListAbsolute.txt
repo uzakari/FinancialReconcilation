@@ -1,9 +1,3 @@
-C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Api\obj\Debug\net5.0\Reconcilation.Management.Api.csproj.AssemblyReference.cache
-C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Api\obj\Debug\net5.0\Reconcilation.Management.Api.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Api\obj\Debug\net5.0\Reconcilation.Management.Api.AssemblyInfoInputs.cache
-C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Api\obj\Debug\net5.0\Reconcilation.Management.Api.AssemblyInfo.cs
-C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Api\obj\Debug\net5.0\Reconcilation.Management.Api.csproj.CoreCompileInputs.cache
-C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Api\obj\Debug\net5.0\Reconcilation.Management.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Api\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Api\bin\Debug\net5.0\appsettings.json
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Api\bin\Debug\net5.0\Reconcilation.Management.Api.exe
@@ -60,7 +54,13 @@ C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilat
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Api\bin\Debug\net5.0\Reconcilation.Management.Identity.pdb
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Api\bin\Debug\net5.0\Reconcilation.Management.Infrastructure.pdb
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Api\bin\Debug\net5.0\Reconcilation.Management.Logging.pdb
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Api\obj\Debug\net5.0\Reconcilation.Management.Api.csproj.AssemblyReference.cache
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Api\obj\Debug\net5.0\Reconcilation.Management.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Api\obj\Debug\net5.0\Reconcilation.Management.Api.AssemblyInfoInputs.cache
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Api\obj\Debug\net5.0\Reconcilation.Management.Api.AssemblyInfo.cs
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Api\obj\Debug\net5.0\Reconcilation.Management.Api.csproj.CoreCompileInputs.cache
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Api\obj\Debug\net5.0\Reconcilation.Management.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Api\obj\Debug\net5.0\Reconcilation.Management.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Api\obj\Debug\net5.0\staticwebassets\Reconcilation.Management.Api.StaticWebAssets.Manifest.cache
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Api\obj\Debug\net5.0\staticwebassets\Reconcilation.Management.Api.StaticWebAssets.xml
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\Reconcilation.Management.Api\obj\Debug\net5.0\scopedcss\bundle\Reconcilation.Management.Api.styles.css

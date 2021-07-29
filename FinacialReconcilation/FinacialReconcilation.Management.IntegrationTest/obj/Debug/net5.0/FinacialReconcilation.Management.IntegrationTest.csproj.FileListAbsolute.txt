@@ -1,9 +1,4 @@
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FinacialReconcilation.Management.IntegrationTest\bin\Debug\net5.0\CoverletSourceRootsMapping
-C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FinacialReconcilation.Management.IntegrationTest\obj\Debug\net5.0\FinacialReconcilation.Management.IntegrationTest.csproj.AssemblyReference.cache
-C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FinacialReconcilation.Management.IntegrationTest\obj\Debug\net5.0\FinacialReconcilation.Management.IntegrationTest.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FinacialReconcilation.Management.IntegrationTest\obj\Debug\net5.0\FinacialReconcilation.Management.IntegrationTest.AssemblyInfoInputs.cache
-C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FinacialReconcilation.Management.IntegrationTest\obj\Debug\net5.0\FinacialReconcilation.Management.IntegrationTest.AssemblyInfo.cs
-C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FinacialReconcilation.Management.IntegrationTest\obj\Debug\net5.0\FinacialReconcilation.Management.IntegrationTest.csproj.CoreCompileInputs.cache
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FinacialReconcilation.Management.IntegrationTest\bin\Debug\net5.0\testhost.dll
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FinacialReconcilation.Management.IntegrationTest\bin\Debug\net5.0\Reconcilation.Management.Api.deps.json
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FinacialReconcilation.Management.IntegrationTest\bin\Debug\net5.0\Reconcilation.Management.Api.runtimeconfig.json
@@ -536,7 +531,14 @@ C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FinacialRe
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FinacialReconcilation.Management.IntegrationTest\bin\Debug\net5.0\Reconcilation.Management.Identity.pdb
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FinacialReconcilation.Management.IntegrationTest\bin\Debug\net5.0\Reconcilation.Management.Infrastructure.pdb
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FinacialReconcilation.Management.IntegrationTest\bin\Debug\net5.0\Reconcilation.Management.Logging.pdb
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FinacialReconcilation.Management.IntegrationTest\obj\Debug\net5.0\FinacialReconcilation.Management.IntegrationTest.csproj.AssemblyReference.cache
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FinacialReconcilation.Management.IntegrationTest\obj\Debug\net5.0\FinacialReconcilation.Management.IntegrationTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FinacialReconcilation.Management.IntegrationTest\obj\Debug\net5.0\FinacialReconcilation.Management.IntegrationTest.AssemblyInfoInputs.cache
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FinacialReconcilation.Management.IntegrationTest\obj\Debug\net5.0\FinacialReconcilation.Management.IntegrationTest.AssemblyInfo.cs
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FinacialReconcilation.Management.IntegrationTest\obj\Debug\net5.0\FinacialReconcilation.Management.IntegrationTest.csproj.CoreCompileInputs.cache
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FinacialReconcilation.Management.IntegrationTest\obj\Debug\net5.0\FinacialReconcilation.Management.IntegrationTest.csproj.CopyComplete
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FinacialReconcilation.Management.IntegrationTest\obj\Debug\net5.0\FinacialReconcilation.Management.IntegrationTest.dll
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FinacialReconcilation.Management.IntegrationTest\obj\Debug\net5.0\ref\FinacialReconcilation.Management.IntegrationTest.dll
 C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FinacialReconcilation.Management.IntegrationTest\obj\Debug\net5.0\FinacialReconcilation.Management.IntegrationTest.genruntimeconfig.cache
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FinacialReconcilation.Management.IntegrationTest\bin\Debug\net5.0\Uploads\clientmarkofffile20140113.csv
+C:\Users\isau\Documents\Learning\Tutuka_Project\FinacialReconcilation\FinacialReconcilation.Management.IntegrationTest\bin\Debug\net5.0\Uploads\markofffile20140113.csv

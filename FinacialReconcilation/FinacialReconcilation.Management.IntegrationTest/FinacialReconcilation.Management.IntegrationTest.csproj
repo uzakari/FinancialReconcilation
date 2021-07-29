@@ -28,4 +28,13 @@
     <ProjectReference Include="..\Reconcilation.Management.Api\Reconcilation.Management.Api.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Uploads\clientmarkofffile20140113.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Uploads\markofffile20140113.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
